@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>Write Your Login Data</h1>
+    <!--action parameter of input determines to which servlet parameters should be passed, -->
+    <!--and method "post" declares method in servlet which will have implemented covering for this form-->
+    <!--Name parameter of input lines should match attributes of User class-->
+    <form action="InputServlet" method="post">
+        Username: <input type="text" name="username">
+        <br>
+        Password: <input type="password" name="password">
+        <br>
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br>
+        Hobby:
+        <input type="checkbox" name="hobby" value="Calisthenics">Calisthenics
+        <input type="checkbox" name="hobby" value="Tabletop Games">Tabletop Games
+        <input type="checkbox" name="hobby" value="RPG Games">RPG Games
+        <br>
+        <input type="submit" value="Send Form">
+    </form>
+</body>
+</html>
